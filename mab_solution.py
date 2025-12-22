@@ -388,7 +388,7 @@ def main():
     print("="*80)
     print()
 
-    url = "https://raw.githubusercontent.com/SahithiSiripuram/drl/main/Dataset_Product_Recommendation.csv"
+    url = "Dataset_Product_Recommendation.csv"
     print(f"Loading dataset from: {url}")
 
     try:
@@ -578,3 +578,4 @@ RECOMMENDATION: Implement UCB or ε-Greedy (10%) for production deployment.
 
 if __name__ == "__main__":
     main()
+
