@@ -1,0 +1,128 @@
+# Quick Start Guide
+
+## Installation (Choose One Method)
+
+### Method 1: Direct Execution
+```bash
+# Install dependencies
+pip3 install numpy pandas matplotlib seaborn
+
+# Run Part 1
+python3 mab_solution.py
+
+# Run Part 2
+python3 dp_solution.py
+
+# Or run both
+python3 run_all.py
+```
+
+### Method 2: Virtual Environment (Recommended)
+```bash
+# Create virtual environment
+python3 -m venv venv
+
+# Activate (Linux/Mac)
+source venv/bin/activate
+
+# Activate (Windows)
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run solutions
+python3 run_all.py
+```
+
+### Method 3: Google Colab
+1. Upload `mab_solution.py` and `dp_solution.py` to Colab
+2. Run in first cell:
+```python
+!pip install numpy pandas matplotlib seaborn
+```
+3. Run in subsequent cells:
+```python
+%run mab_solution.py
+%run dp_solution.py
+```
+
+## What to Expect
+
+### Part 1 Output (5-10 seconds):
+- Net reward analysis for 6 products
+- Random policy performance
+- Greedy policy results
+- Epsilon-greedy comparison (3 rates)
+- UCB policy demonstration
+- Comprehensive comparison plot
+- Strategy recommendations
+
+### Part 2 Output (30-120 seconds):
+- Initial board configuration
+- State enumeration progress
+- Value Iteration convergence
+- Policy Iteration convergence
+- Value function heatmaps (2)
+- Policy demonstration
+- Theoretical analysis
+
+## Creating PDF for Submission
+
+### Option 1: Copy to Jupyter Notebook
+1. Create new notebook
+2. Copy code into cells
+3. Execute all cells
+4. File → Download as → PDF
+
+### Option 2: Screenshot Method
+1. Run the Python scripts
+2. Screenshot all output
+3. Compile into Word/PowerPoint
+4. Export to PDF
+
+### Option 3: Command Line
+```bash
+# Redirect output to file
+python3 mab_solution.py > mab_output.txt 2>&1
+python3 dp_solution.py > dp_output.txt 2>&1
+
+# Convert to PDF using any tool
+# (pandoc, online converters, etc.)
+```
+
+## Troubleshooting
+
+**Import Error?**
+```bash
+pip3 install numpy pandas matplotlib seaborn
+```
+
+**Dataset Not Loading?**
+- Code automatically generates synthetic data
+- No action needed
+
+**Too Slow?**
+- Part 2: Edit `max_states=3000` (line ~700)
+- Use 4x4 board instead of 5x5
+
+## File Naming for Submission
+
+```
+Team01-MAB.pdf  (Part 1)
+Team01-DP.pdf   (Part 2)
+```
+
+Replace "01" with your team number.
+
+## Deadline Reminder
+
+**Submit by**: December 20, 2025
+**Recommended**: Submit 2 days early (December 18, 2025)
+
+## Support
+
+For detailed instructions, see:
+- `README.md` - Full project overview
+- `IMPLEMENTATION_SUMMARY.md` - Technical details
+- `docs/USAGE_GUIDE.md` - Comprehensive guide
